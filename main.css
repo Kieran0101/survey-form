@@ -1,0 +1,30 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
+#title{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#description{
+    padding: 10px;
+}
+#survey-form{
+    display: inline;
+    padding: 5px;
+}
+#radio-buttons{
+    display: inline;
+    padding: 5px;
+}
+#additional-comments{
+    padding-top: 20px;
+}
+#text-area{
+    width: 300px;
+    height: 100px;
+}
+#submit{
+    padding-top: 20px;
+}

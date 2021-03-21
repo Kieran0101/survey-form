@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a short form designed to collect a few deatils about your excercise habits.</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" required id="name" placeholder="Enter Name Here"><br>
+        <label for="email" id="email-label">E-mail</label>
+        <input type="email" required id="email" placeholder="Enter E-mail Here"><br>
+        <label for="number" id="number-label">Age</label>
+        <input type="number" required id="number" placeholder="Enter Age Here" min="0" max="100"><br>
+        <label for="frequency" id="frequency-list">How many times a week do you excercise on average?</label>
+        <div class="box">
+            <select name="frequency" id="dropdown">
+                <option>0-1</option>
+                <option>1-3</option>   
+                <option>3-5</option>
+                <option>5-7</option>
+            </select>
+        </div>
+        <div id="radio-buttons">
+            <label for="favourites">Which is your favourite form of excercise?</label><br>
+            <input type="radio" name="favourites" value="running">Running<br>
+            <input type="radio" name="favourites" value="walking">Walking<br>
+            <input type="radio" name="favourites" value="cycling">Cycling<br>
+            <input type="radio" name="favourites" value="other">Other<br>
+            <input type="text" name="other-text" id="other-text" placeholder="If other please specify here">
+        </div>
+        <div id="inside/outside">
+            <label for="inside/outside">Do you prefer to excercise inside or outside?</label><br>
+            <label for="inside">Inside</label>
+            <input type="checkbox" id="inside" value="inside"><br>
+            <label for="outside">Outside</label>
+            <input type="checkbox" id="outside" value="outside"><br>
+            <label for="both">Both</label>
+            <input type="checkbox" id="both" value="both">
+        </div>
+        <div id="additional-comments">
+            <textarea name="additional-comments" id="text-area" cols="30" rows="10" placeholder="Please add any further comments here"></textarea>
+        </div>
+        <div>
+            <button id="submit" type="submit">Click Here To Submit</button>
+        </div>
+    </form>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
